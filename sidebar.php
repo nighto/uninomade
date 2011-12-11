@@ -7,7 +7,7 @@
  * @since Starkers 3.0
  */
 ?>
-
+<aside>
 			<ul class="xoxo">
 
 <?php
@@ -40,7 +40,7 @@
 
 		<?php endif; // end primary widget area ?>
 			</ul>
-
+</aside>
 <?php
 	// A second sidebar for widgets, just because.
 	if ( is_active_sidebar( 'secondary-widget-area' ) ) : ?>
@@ -48,5 +48,4 @@
 			<ul class="xoxo">
 				<?php dynamic_sidebar( 'secondary-widget-area' ); ?>
 			</ul>
-
 <?php endif; ?>

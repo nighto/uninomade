@@ -11,3 +11,81 @@ Tags: starkers, naked, clean, basic
 @import "css/reset.css";
 @import "css/typography.css";
 @import "css/layout.css";
+
+
+body {
+	font: 12px Verdana, sans-serif;
+	margin: 0 auto;
+	width: 980px;
+}
+
+header {
+	background: url('images/header.png') no-repeat;
+	height: 147px;
+	position: fixed;
+	top: 0;
+	width: 980px;
+}
+
+header h1 a {
+	text-indent: -9999px;
+	width: 114px; height: 114px;
+	margin: 42px 11px 0 0;
+	display: block;
+	float: left;
+	background: none;
+}
+
+header #access > a {
+	display: none;
+}
+
+#menu-primary-navigation {
+	float: left;
+	margin: 45px 0 0 90px;
+}
+
+#menu-primary-navigation li {
+	float: left;
+	padding: 0 5px;
+	margin: 0 10px;
+}
+
+#menu-primary-navigation li a {
+	color: white;
+	text-decoration: none;
+	border-bottom: 2px solid black;
+}
+
+#menu-primary-navigation li a:hover {
+	border-bottom: 2px solid red;
+}
+
+#menu-primary-navigation li:last-child a {
+	background: url('images/header-facebook.png') no-repeat;
+	display: block;
+	margin: -15px 0 0 0;
+	text-indent: -9999px;
+	width: 30px; height: 30px;
+}
+
+article {
+	clear: both;
+	float: left;
+	margin: 100px 0 146px 150px;
+	width: 500px;
+}
+
+aside {
+	float: right;
+	margin: 100px 130px 146px 0;
+	width: 160px;
+}
+
+footer {
+	background: url('images/footer.png') no-repeat;
+	bottom: 0;
+	clear: both;
+	position: fixed;
+	width: 980px; height: 146px;
+}
