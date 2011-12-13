@@ -12,6 +12,9 @@ Tags: starkers, naked, clean, basic
 @import "css/typography.css";
 @import "css/layout.css";
 
+.clear {
+	clear: both;
+}
 
 body {
 	font: 12px Verdana, sans-serif;
@@ -58,7 +61,7 @@ header #access > a {
 }
 
 #menu-primary-navigation li a:hover {
-	border-bottom: 2px solid red;
+	border-bottom: 2px solid #840000;
 }
 
 #menu-primary-navigation li:last-child a {
@@ -72,8 +75,69 @@ header #access > a {
 article {
 	clear: both;
 	float: left;
-	margin: 100px 0 146px 150px;
+	margin: 80px 0 146px 150px;
 	width: 500px;
+}
+
+article h1 {
+	background: #F1F1F1;
+	display: inline;
+	padding: 6px 9px;
+	font-size: 22px;
+    font-weight: normal;
+    float: left;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+article p {
+	margin: 15px 0 0;
+}
+
+article .post {
+	width: 200px;
+	height: 220px;
+	margin: 20px 30px 20px 0;
+	padding: 0 0 0 10px;
+	overflow: hidden;
+	float: left;
+	background: url('images/post-box.png') no-repeat;
+}
+
+article .post h2 {
+	line-height: 21px;
+}
+
+article .post h2 a {
+	color: #D6373B;
+	text-decoration: none;
+}
+
+article .post h2 a:hover {
+	text-decoration: underline;
+}
+
+article .post .leiamais {
+	text-align: right;
+	margin: 12px 0 0;
+}
+
+article .post .leiamais a {
+	color: #666666;
+	background-color: #BBBBBB;
+	padding: 2px 10px 8px;
+	font-weight: bold;
+	text-decoration: none;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+article .post .leiamais a:hover {
+	text-decoration: underline;
 }
 
 aside {
@@ -82,10 +146,22 @@ aside {
 	width: 160px;
 }
 
+aside ul.xoxo li {
+	margin: 5px 0;
+	border-bottom: 2px solid #BBBBBB;
+}
+
 footer {
 	background: url('images/footer.png') no-repeat;
 	bottom: 0;
 	clear: both;
 	position: fixed;
 	width: 980px; height: 146px;
+}
+
+footer p {
+	color: #848484;
+	font-size: 10px;
+	margin: 125px 80px;
+	width: 100%;
 }
